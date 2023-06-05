@@ -10,6 +10,5 @@ public class Test {
         System.out.println("media s1: "+ s1.media()+ " var s1: "+ s1.var());
         System.out.println("media si: "+ si.media()+ " var si: "+ si.var());
        
-        
     }
 }
