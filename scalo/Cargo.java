@@ -22,8 +22,8 @@
 }*/
 
 public class Cargo {
-    String name; 
-    int peso;
+    private String name; 
+    private int peso;
 
     /*
      * AF: name rappresenta il nome del cargo e peso il peso

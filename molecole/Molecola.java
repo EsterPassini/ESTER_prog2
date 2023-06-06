@@ -24,7 +24,9 @@ public abstract class Molecola {
         return nome;
     }
 
+    //EFFECTS: restituisce la formula in forma di stringa
     abstract public String getFormula();
 
+    //EFFECTS: restituisce il peso della molecola
     abstract public float peso();
 }

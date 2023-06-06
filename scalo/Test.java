@@ -25,14 +25,12 @@ public class Test {
 
         ScaloNavale scalo = new ScaloNavale(l_m);
 
-        System.out.println("=^.^=");
         System.out.println("scalo: " + scalo);
         System.out.println("peso prima nave molo a: " + a.PesoPrimaNave());
-        System.out.println("=^.^=");
 
-        SuperRimorchiatore supR = new SuperRimorchiatore();
+        //SuperRimorchiatore supR = new SuperRimorchiatore();
         MiniRimorchiatore minR = new MiniRimorchiatore();
-        PrudenteRimorchiatore prudR = new PrudenteRimorchiatore(100);
+        //PrudenteRimorchiatore prudR = new PrudenteRimorchiatore(100);
         /*
          * System.out.println("supR"+ supR);
          * System.out.println("minR" + minR);
