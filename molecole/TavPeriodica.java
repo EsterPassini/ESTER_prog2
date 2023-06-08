@@ -26,7 +26,7 @@ public class TavPeriodica {
             throw new IllegalArgumentException("tavola non deve contenere elementi nulli");
 
         for (int i = 1; i < tavola.size(); i++) {
-            if (tavola.get(i).num_atomico() <= tavola.get(i + 1).num_atomico())
+            if (tavola.get(i-1).num_atomico() <= tavola.get(i).num_atomico())
                 throw new IllegalArgumentException(
                         "gli elementi in tavola devono essere in ordine crescente di num atomico");
         }

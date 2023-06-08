@@ -22,6 +22,7 @@ public class Molo {
         molo = new LinkedList<Cargo>();
     }
 
+    //prob di sicurezza
     public Molo(LinkedList<Cargo> molo) {
         super();
         Objects.requireNonNull(molo, "molo non può essere nullo");

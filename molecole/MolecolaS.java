@@ -22,7 +22,7 @@ public class MolecolaS extends Molecola {
 
         Objects.requireNonNull(ele, "ele non deve essere nul");
         if (numero < 1)
-            throw new IllegalArgumentException("numero deve essere >1");
+            throw new IllegalArgumentException("numero deve essere >=1");
 
         this.ele = ele;
         this.numero = numero;
