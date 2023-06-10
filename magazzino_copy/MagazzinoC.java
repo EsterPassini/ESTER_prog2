@@ -10,11 +10,11 @@ import java.util.Objects;
 
 
 public class MagazzinoC {
-    /*
-* questa classe descrive degli scaffali, cioè una struttura in cui i pacchi sono inseriti
-* da sopra e prelevati da sotto
-*/
 
+    /*
+    * questa classe descrive degli scaffali, cioè una struttura in cui i pacchi sono inseriti
+    * da sopra e prelevati da sotto
+    */
     public class Scaffale{
         //campi
         private List<PaccoC> s;
@@ -49,6 +49,13 @@ public class MagazzinoC {
         //EFFECTS: restituisce il numero di pacchi attualmente su uno scaffale
         private int numeroPacchi() {
             return s.size();
+        }
+
+        //EFFECTS: restituisce il peso del primo pacco da estrarre, se lo scaffale è vuoto ritorna -1
+        private int pesoPrimoPacco() {
+            if (numeroPacchi()==0)
+                return -1;
+            return s.get(s.size()-1).getH();
         }
 
         @Override
@@ -126,6 +133,14 @@ public class MagazzinoC {
        return scaf.get(a-1).numeroPacchi();
     }
 
+    //EFFECTS: restituisce l'altezza del primo pacco da rimuovere da un dato scaffale a, 
+    //se scaffale a è vuoto restituisce 0
+    //solleva un eccezione se a< di 1 o se a maggiore del numero di scaffali
+    public int PesoPrimoPaccoScaffale(int a) {
+        if (a<1 || a > numeroScaffali())
+            throw new IllegalArgumentException("scaffale non accettabile");
+       return scaf.get(a-1).pesoPrimoPacco();
+    }
 
     @Override
     public String toString(){

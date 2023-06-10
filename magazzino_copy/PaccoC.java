@@ -5,8 +5,8 @@
 import java.util.Objects;
 
 public class PaccoC {
-    String prodotto;
-    int h;
+    private String prodotto;
+    private int h;
     /*
      * AF: prodotto indica di che tipo è il pacco, h ne indica l'altezza
      * 
@@ -22,6 +22,14 @@ public class PaccoC {
             throw new IllegalArgumentException("input non accettabili per costruire un pacco");
         this.prodotto = prodotto;
         this.h = h;
+    }
+
+    public int getH(){
+        return h;
+    }
+
+    public String getProdotto(){
+        return prodotto;
     }
 
     @Override

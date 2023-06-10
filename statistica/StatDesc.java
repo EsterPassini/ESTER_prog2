@@ -15,7 +15,7 @@ public abstract class StatDesc{
      */
 
     public StatDesc(double[] f){
-        this.f = f;
+        this.f = f.clone();
     }
 
     //EFFECTS: restituisce un float che è la media dei valori in f
