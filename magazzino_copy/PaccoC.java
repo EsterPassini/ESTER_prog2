@@ -4,9 +4,8 @@
 
 import java.util.Objects;
 
-public class PaccoC {
-    private String prodotto;
-    private int h;
+public record PaccoC(String prodotto, int h) {
+    
     /*
      * AF: prodotto indica di che tipo è il pacco, h ne indica l'altezza
      * 
@@ -24,13 +23,6 @@ public class PaccoC {
         this.h = h;
     }
 
-    public int getH(){
-        return h;
-    }
-
-    public String getProdotto(){
-        return prodotto;
-    }
 
     @Override
     public String toString(){

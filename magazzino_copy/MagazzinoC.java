@@ -55,7 +55,7 @@ public class MagazzinoC {
         private int pesoPrimoPacco() {
             if (numeroPacchi()==0)
                 return -1;
-            return s.get(s.size()-1).getH();
+            return s.get(s.size()-1).h();
         }
 
         @Override

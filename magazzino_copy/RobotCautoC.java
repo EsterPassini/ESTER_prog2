@@ -68,6 +68,7 @@ public class RobotCautoC implements RobotC{
         if (!nastroTrasp.isEmpty()){
             for (int t = 0; t < nastroTrasp.size(); t++) { //scarico nastro se vi sono rimasti pacchi
                 m.aggiungiAScaffale(b, nastroTrasp.get(t));
+                
             }
         }
         return viaggi;
@@ -80,7 +81,7 @@ public class RobotCautoC implements RobotC{
     private int pesoTrasportato(LinkedList<PaccoC> n){
         int p = 0;
         for (int i = 0; i< n.size(); i++){
-            p = p + n.get(i).getH();
+            p = p + n.get(i).h();
         }
         return p;
     }
