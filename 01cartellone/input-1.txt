@@ -1,0 +1,4 @@
+"My Frozen Chestnuts" 3 P 4
+"They Call Me Trinity" 4 R 3
+"The Single Standard" 8
+"Three Amigos" 10 R 3
